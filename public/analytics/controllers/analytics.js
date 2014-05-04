@@ -89,11 +89,11 @@ angular.module('mean.analytics', [])
       new Morris.Line({
       element: 'science-chart',
        data: [
-          { year: '2014-01', class_avg: 24 , state_avg: 21},
-          { year: '2014-02', class_avg: 21 , state_avg: 18},
-          { year: '2014-03', class_avg: 18, state_avg: 17},
-          { year: '2014-04', class_avg: 22 , state_avg: 23},
-          { year: '2014-05', class_avg: 23 , state_avg: 20}
+          { year: '2014-01', class_avg: 24, state_avg: 22},
+          { year: '2014-02', class_avg: 22, state_avg: 19},
+          { year: '2014-03', class_avg: 25, state_avg: 23},
+          { year: '2014-04', class_avg: 23, state_avg: 25},
+          { year: '2014-05', class_avg: 21, state_avg: 22}
         ],
         xkey: 'year',
         ykeys: ['class_avg', 'state_avg'],
@@ -104,11 +104,11 @@ angular.module('mean.analytics', [])
       new Morris.Line({
       element: 'geo-chart',
        data: [
-          { year: '2014-01', class_avg: 24 , state_avg: 21},
-          { year: '2014-02', class_avg: 21 , state_avg: 18},
-          { year: '2014-03', class_avg: 18, state_avg: 17},
-          { year: '2014-04', class_avg: 22 , state_avg: 23},
-          { year: '2014-05', class_avg: 23 , state_avg: 20}
+          { year: '2014-01', class_avg: 25 , state_avg: 26},
+          { year: '2014-02', class_avg: 26 , state_avg: 24},
+          { year: '2014-03', class_avg: 27 , state_avg: 23},
+          { year: '2014-04', class_avg: 24 , state_avg: 26},
+          { year: '2014-05', class_avg: 26 , state_avg: 23}
         ],
         xkey: 'year',
         ykeys: ['class_avg', 'state_avg'],
