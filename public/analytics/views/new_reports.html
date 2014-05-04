@@ -1,0 +1,49 @@
+<div class="row">
+  <div class="col-sm-3">
+    <div class="sidebar-nav">
+      <div class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <span class="visible-xs navbar-brand">Sidebar menu</span>
+        </div>
+        <div class="navbar-collapse collapse sidebar-navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#!/analytics">Overview</a></li>
+            <li><a href="#/class_stats">Class Statistics</a></li>
+            <li><a href="#!/individual_stats">Individual Statistics</a></li>
+            <li class="active"><a href="#">New Reports <span class="badge">53</span></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-9">
+  	<!-- Overview header -->
+  	<div class="row" style="padding-left:15px">
+  			<h2 >Recently Aggregated Reports</h2>
+  	</div>
+    <div class="alert alert-success">
+      53 new reports aggregated for your class.
+    </div>
+    <div class="row" style="padding-left:15px">   
+      sblsd
+      <section data-ng-controller="StudentListController">
+        <div class="dropdown">
+          <button class="btn dropdown-toggle sr-only" type="button" id="dropdownMenu1" data-toggle="dropdown">
+            Dropdown
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+            <li ng-repeat="student in students">
+              <a href="{{student}}_graph">{{student.name}}</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+</div> 

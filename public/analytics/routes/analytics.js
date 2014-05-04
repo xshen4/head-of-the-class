@@ -19,6 +19,11 @@ angular.module('mean.analytics').config(['$stateProvider', '$urlRouterProvider',
 				url:'/individual_stats',
 				templateUrl: 'public/analytics/views/individual_stats.html'
 			})
+			.state('new_reports',
+			{
+				url:'/new_reports',
+				templateUrl: 'public/analytics/views/new_reports.html'
+			})
 			;
 	}
 ]);

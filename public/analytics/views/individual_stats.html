@@ -1,15 +1,3 @@
-<!--<section data-ng-controller="AnalyticsController">
-	<table>
-		<tr ng-repeat="student in students">
-			<td>{{student.id}}</td>
-			<td> {{student.score}}</td>
-			<td>{{student.name}}</td>
-		</tr>
-	</table>
-	<div test-dir></div>
-</section>-->
-
-
 <div class="row">
   <div class="col-sm-3">
     <div class="sidebar-nav">
@@ -28,7 +16,7 @@
             <li><a href="#!/analytics">Overview</a></li>
             <li><a href="#!/class_stats">Class Statistics</a></li>
             <li class="active"><a href="#">Individual Statistics</a></li>
-            <li><a href="#!">New Analytics <span class="badge">1,118</span></a></li>
+            <li><a href="#!/new_reports">New Reports <span class="badge">53</span></a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -38,7 +26,7 @@
 
   	<!-- Overview header -->
   	<div class="row">
-  			<h2 style="padding-left:15px">Class Statistics</h2>
+  			<h2 style="padding-left:15px">Individual Statistics</h2>
   	</div>
 
     <div class="row">
@@ -96,32 +84,34 @@
       </div>
     </div>
 
-
-		<div class="row">
-    <section data-ng-controller="ClassController">
-      <div id="class-chart" style="height: 250px;"></div>
-    </section>
-    <section data-ng-controller="IndvController">
-            <div id="indv-chart" style="height: 250px;"></div>
-    </section>
-  </div>
+    <!-- start graph view -->
+    <div class="row" style="padding-left:15px; padding-right:15px;">
+      <section data-ng-controller="ClassController">
+        <!--<div class="row">
+        <div class="col-sm-9">-->
+        <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Classroom Statistics: January 1, 2014 - May 15, 2015</h3>
+                </div>
+                <div class="panel-body">
+                    <div id="class-chart" style="height: 250px;"></div>
+                </div>
+          </div>
+      </section>
+    </div>
+    <div class="row" style="padding-left:15px; padding-right:15px;">
+      <section data-ng-controller="IndvController">
+        <!--<div class="row">
+        <div class="col-sm-9">-->
+        <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Individual Statistics: January 1, 2014 - May 15, 2015 (State Avg = 53) </h3>
+                </div>
+                <div class="panel-body">
+                    <div id="indv-chart" style="height: 250px;"></div>
+                </div>
+          </div>
+      </section>
+    </div>
+    <!-- end graph view -->
 </div> 
-
-<!--<div class="nav navbar-nav side-nav">
-<ul class="nav navbar-nav side-nav">
-      <li class="active"><a href="index.html"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-      <li><a href="charts.html"><i class="fa fa-bar-chart-o"></i> Charts</a></li>
-     </ul>
-</div>
-
-<div id="page-wrapper">
-		<section data-ng-controller="ClassStatController">
-			<div> Classroom Breakdown </div>
-		   <div class-stats bar-height="20" bar-padding="5" data='data'></div>
-		</section>
-		<section data-ng-controller="SubjectStatController">
-			<div> Subject Breakdown </div>
-			<div subject-stats bar-height="20" bar-padding="5" data='data'></div>
-		</section>
-</div>
-</div>-->
