@@ -28,7 +28,7 @@ angular.module('mean.controllers.login', [])
                     }
                     else if (user.username ==='test_student'){
                         console.log('student');
-                        $location.url('/profile')
+                        $location.url('/profile');
                     }
                     else {
                         console.log('other user');
