@@ -8,6 +8,11 @@
 	</table>
 	<div test-dir></div>
 </section>-->
-<section data-ng-controller="MainCtrl">
-   <div d3-bars bar-height="20" bar-padding="5" data='data'></div>
+<section data-ng-controller="ClassStatController">
+	<div> Classroom Breakdown </div>
+   <div class-stats bar-height="20" bar-padding="5" data='data'></div>
+</section>
+<section data-ng-controller="SubjectStatController">
+	<div> Subject Breakdown </div>
+	<div subject-stats bar-height="20" bar-padding="5" data='data'></div>
 </section>
