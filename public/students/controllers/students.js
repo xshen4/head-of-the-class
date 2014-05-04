@@ -5,40 +5,40 @@ angular.module('mean.students', [])
 // Controller for student 
 .controller('StudentController', function($scope){
     $scope.course_data = [
-      {subject: 'math', value : 80},
-      {subject: 'science', value : 80},
-      {subject: 'geography', value : 80},
-      {subject: 'english', value : 80}
+      {subject: 'math', value : 85},
+      {subject: 'science', value : 64},
+      {subject: 'geography', value : 73},
+      {subject: 'english', value : 79}
     ];
 
-    $scope.state_data = 25;
+    $scope.state_data = 78;
 
     new Morris.Donut({
     element: 'math-progress',
       data: [
-        {label: 'Your score', value: 80},
-        {label: 'Average Score', value: 95}
+        {label: 'Your score', value: 85},
+        {label: 'Average Score', value: 74}
       ]
     });
     new Morris.Donut({
     element: 'science-progress',
       data: [
-        {label: 'Students Quizzed', value: 24},
-        {label: 'Total Students', value: 40}
+        {label: 'Your score', value: 64},
+        {label: 'Average Score', value: 67}
       ]
     });
     new Morris.Donut({
     element: 'geography-progress',
       data: [
-        {label: 'Students Quizzed', value: 24},
-        {label: 'Total Students', value: 40}
+        {label: 'Your score', value: 73},
+        {label: 'Average Score', value: 79}
       ]
     });
     new Morris.Donut({
     element: 'english-progress',
       data: [
-        {label: 'Students Quizzed', value: 24},
-        {label: 'Total Students', value: 40}
+        {label: 'Your score', value: 75},
+        {label: 'Average Score', value: 81}
       ]
     });
 })
