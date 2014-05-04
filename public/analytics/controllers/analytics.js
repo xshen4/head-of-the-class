@@ -34,36 +34,36 @@ angular.module('mean.analytics', [])
     // Chart data records -- each entry in this array corresponds to a point on
     // the chart.
    data: [
-      {name: 'Xiuli', score: 77},
-      {name: 'Julian', score: 90},
-      {name: 'Jaoquin', score: 83},
-      {name: 'Pierre', score: 74},
-      {name: 'Anita', score: 82},
-      {name: 'Randal', score: 75},
-      {name: 'Homer', score: 93},
-      {name: 'Theodore', score: 88},
-      {name: 'Nancy', score: 72},
-      {name: 'Ralph', score: 84},
-      {name: 'Thomas', score: 79},
-      {name: 'Tawney', score: 96},
-      {name: 'Michelle', score: 85},
-      {name: 'Cooper', score: 70},
-      {name: 'Billy', score: 86},
-      {name: 'Doug', score: 76},
-      {name: 'Calvin', score: 90},
-      {name: 'Bev', score: 80},
-      {name: 'Morgan', score: 71},
-      {name: 'Alfredo', score: 84},
-      {name: 'Logan', score: 56}
+      {name: 'Xiuli',     score: .77,  time: .6},
+      {name: 'Julian',    score: .90,  time: .8},
+      {name: 'Jaoquin',   score: .83,  time: .6},
+      {name: 'Pierre',    score: .74,  time: .7},
+      {name: 'Anita',     score: .82,  time: .5},
+      {name: 'Randal',    score: .75,  time: .3},
+      {name: 'Homer',     score: .93,  time: .6},
+      {name: 'Theodore',  score: .88,  time: .8},
+      {name: 'Nancy',     score: .72,  time: .9},
+      {name: 'Ralph',     score: .84,  time: .4},
+      {name: 'Thomas',    score: .79,  time: .5},
+      {name: 'Tawney',    score: .96,  time: .3},
+      {name: 'Michelle',  score: .85,  time: .7},
+      {name: 'Cooper',    score: .70,  time: .3},
+      {name: 'Billy',     score: .86,  time: .8},
+      {name: 'Doug',      score: .76,  time: .9},
+      {name: 'Calvin',    score: .90,  time: .10},
+      {name: 'Bev',       score: .80,  time: .5},
+      {name: 'Morgan',    score: .71,  time: .6},
+      {name: 'Alfredo',   score: .84,  time: .7},
+      {name: 'Logan',     score: .56,  time: .4}
     ],
 
     // The name of the data record attribute that contains x-values.
     xkey: 'name',
     // A list of names of data record attributes that contain y-values.
-    ykeys: ['score'],
+    ykeys: ['score', 'time'],
     // Labels for the ykeys -- will be displayed when you hover over the
     // chart.
-    labels: ['Class Average']
+    labels: ['Class Average', 'Response Time']
   });
 })
 // Donut of students
