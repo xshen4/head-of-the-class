@@ -31,7 +31,7 @@
   	</div>
 
     <div class="alert alert-success">
-      53 new reports aggregated for your class.
+      6 new reports aggregated for your class.
     </div>
 
     <!-- start showing student list -->
@@ -46,9 +46,23 @@
               <li ng-repeat = "student in students">
                   <a href="#{{student.id}}">{{student.name}}</a>
               </li>
+              <li >
+                <a href="#Billy">Billy</a>
+              </li>
             </ul>
           </li>
         </ul>
+    </section>
+  </div>
+
+  <div class="row" style="padding-left:15px">
+    <section data-ng-controller="TabsDemoCtrl">
+      <tabset>
+        <tab heading="Static title">Static content</tab>
+        <tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active" disabled="tab.disabled">
+          {{tab.content}}
+        </tab>
+      </tabset>
     </section>
   </div>
   <!-- end student list -->
