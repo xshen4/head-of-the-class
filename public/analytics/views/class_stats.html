@@ -16,7 +16,7 @@
             <li><a href="#!/analytics">Overview</a></li>
             <li class="active"><a href="#">Class Statistics</a></li>
             <li><a href="#!/individual_stats">Individual Statistics</a></li>
-            <li><a href="#!/new_reports">New Reports <span class="badge">53</span></a></li>
+            <li><a href="#!/new_reports">New Reports <span class="badge">5</span></a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -79,32 +79,53 @@
     </div>
     <!-- start graph view -->
     <div class="row" style="padding-left:15px; padding-right:15px;">
-      <section data-ng-controller="ClassController">
-        <!--<div class="row">
-        <div class="col-sm-9">-->
+      <section data-ng-controller="MathGraphController">
         <div class="panel panel-primary">
                 <div class="panel-heading">
-                  <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Classroom Statistics: January 1, 2014 - May 15, 2015</h3>
+                  <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Math Statistics: January 1, 2014 - May 15, 2015</h3>
                 </div>
                 <div class="panel-body">
-                    <div id="class-chart" style="height: 250px;"></div>
+                    <div id="math-chart" style="height: 250px;"></div>
                 </div>
           </div>
       </section>
     </div>
     <div class="row" style="padding-left:15px; padding-right:15px;">
-      <section data-ng-controller="IndvController">
-        <!--<div class="row">
-        <div class="col-sm-9">-->
+      <section data-ng-controller="ScienceGraphController">
         <div class="panel panel-primary">
                 <div class="panel-heading">
-                  <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Individual Statistics: January 1, 2014 - May 15, 2015 (State Avg = 53) </h3>
+                  <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Science Statistics: January 1, 2014 - May 15, 2015 (State Avg = 53) </h3>
                 </div>
                 <div class="panel-body">
-                    <div id="indv-chart" style="height: 250px;"></div>
+                    <div id="science-chart" style="height: 250px;"></div>
                 </div>
           </div>
       </section>
     </div>
+    <div class="row" style="padding-left:15px; padding-right:15px;">
+      <section data-ng-controller="GeographyGraphController">
+        <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Geography Statistics: January 1, 2014 - May 15, 2015 (State Avg = 53) </h3>
+                </div>
+                <div class="panel-body">
+                    <div id="geo-chart" style="height: 250px;"></div>
+                </div>
+          </div>
+      </section>
+    </div>
+    <div class="row" style="padding-left:15px; padding-right:15px;">
+      <section data-ng-controller="EnglishGraphController">
+        <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> English Statistics: January 1, 2014 - May 15, 2015 (State Avg = 53) </h3>
+                </div>
+                <div class="panel-body">
+                    <div id="english-chart" style="height: 250px;"></div>
+                </div>
+          </div>
+      </section>
+    </div>
+
     <!-- end graph view -->
 </div> 
