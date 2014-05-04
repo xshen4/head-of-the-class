@@ -43,7 +43,7 @@ angular.module('mean.students', [])
     });
 })
 .controller('UserInfoController', function($scope){
-  $scope.data = {id: 0, name: 'Test Student'};
+  $scope.data = {id: 0, name: 'John Smith'};
 })
 // Individual student controller
 .controller('StudentCompareController', function($scope){
