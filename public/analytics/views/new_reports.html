@@ -22,28 +22,45 @@
       </div>
     </div>
   </div>
+
   <div class="col-sm-9">
+    <section data-ng-controller="StudentListController">
   	<!-- Overview header -->
   	<div class="row" style="padding-left:15px">
-  			<h2 >Recently Aggregated Reports</h2>
+  			<h2 >Daily Aggregated Reports</h2>
   	</div>
+
     <div class="alert alert-success">
       53 new reports aggregated for your class.
     </div>
-    <div class="row" style="padding-left:15px">   
-      sblsd
-      <section data-ng-controller="StudentListController">
-        <div class="dropdown">
-          <button class="btn dropdown-toggle sr-only" type="button" id="dropdownMenu1" data-toggle="dropdown">
-            Dropdown
-            <span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-            <li ng-repeat="student in students">
-              <a href="{{student}}_graph">{{student.name}}</a>
-            </li>
-          </ul>
-        </div>
-      </section>
+
+    <!-- start showing student list -->
+    <div class="row" style="padding-left:15px">
+          <ul class="nav nav-pills">
+          <li class="active"><a href="#">Overview</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              Students with Updated Results <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li ng-repeat = "student in students">
+                  <a href="#{{student.id}}">{{student.name}}</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+    </section>
+  </div>
+  <!-- end student list -->
+
+  <!-- tabbed areas -->
+  <!-- Tab panes -->
+  <section data-ng-controller="DropDownController">
+    <div class="tab-content">
+      <div ng-repeat = "student in students">
+        <div class="tab-pane" id="{{student.id}}"></div>
+      </div>
     </div>
-</div> 
+  </section>
+
+  </div> 

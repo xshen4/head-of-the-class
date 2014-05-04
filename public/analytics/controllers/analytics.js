@@ -66,20 +66,37 @@ angular.module('mean.analytics', [])
     labels: ['Class Average']
   });
 })
+// Donut of students
+.controller('DailyReportController', function($scope){
+  Morris.Donut({
+  element: 'donut-example',
+  data: [
+    {label: "Students Quizzed", value: 24},
+    {label: "Total Students", value: 40}
+  ]
+});
+})
 // List of students
 .controller('StudentListController', function($scope){
   $scope.students=[
-    {name : 'Xiuli Shen', id : 0},
-    {name : 'Xiuli Shen', id : 0},
-    {name : 'Xiuli Shen', id : 0},
-    {name : 'Xiuli Shen', id : 0},
-    {name : 'Xiuli Shen', id : 0},
-    {name : 'Xiuli Shen', id : 0},
-    {name : 'Xiuli Shen', id : 0},
-    {name : 'Xiuli Shen', id : 0},
-    {name : 'Xiuli Shen', id : 0},
-    {name : 'Xiuli Shen', id : 0},
-    {name : 'Xiuli Shen', id : 0}    
+    {name : 'Julian', id : 0},
+    {name : 'Joaquin', id : 0},
+    {name : 'Pierre', id : 0},
+    {name : 'Anita', id : 0},
+    {name : 'Xiuli', id: 0}
   ];
+})
+.controller('DropDownController', function($scope){
+  $scope.students=[
+    {name : 'Julian', id : 0},
+    {name : 'Joaquin', id : 0},
+    {name : 'Pierre', id : 0},
+    {name : 'Anita', id : 0},
+    {name : 'Xiuli', id: 0}
+  ];
+  $('#myTab a').click(function (e) {
+    e.preventDefault();
+    $(this).tab('show');
+  });
 })
 ;
