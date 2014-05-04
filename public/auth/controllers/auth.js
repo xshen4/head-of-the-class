@@ -13,10 +13,27 @@ angular.module('mean.controllers.login', [])
             })
                 .success(function(user){
                     // authentication OK
-                    $scope.loginError = 0;
+                 /*   $scope.loginError = 0;
                     $rootScope.user = user;
                     $rootScope.$emit('loggedin');
-                    $location.url('/');
+                    $location.url('/');*/
+                    $scope.loginError = 0;
+                    $rootScope.user = user;
+                    console.log(user);
+                    console.log(user.username);
+                    $rootScope.$emit('loggedin');
+                    if(user.username==='xshen4'){
+                        console.log('teacher');
+                        $location.url('/analytics');
+                    }
+                    else if (user.username ==='test_student'){
+                        console.log('student');
+                        $location.url('/profile')
+                    }
+                    else {
+                        console.log('other user');
+                        $location.url('/');
+                    }
                 })
                 .error(function() {
                     $scope.loginerror = 'Authentication failed.';
