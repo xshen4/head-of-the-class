@@ -10,11 +10,11 @@ angular.module('mean.analytics', [])
     // Chart data records -- each entry in this array corresponds to a point on
     // the chart.
    data: [
-      { year: '2014-01', class_avg: 20 , state_avg: 30},
-      { year: '2014-02', class_avg: 10 , state_avg: 20},
-      { year: '2014-03', class_avg: 5 , state_avg: 10},
-      { year: '2014-04', class_avg: 5 , state_avg: 15},
-      { year: '2014-05', class_avg: 20 , state_avg: 5}
+      { year: '2014-01', class_avg: 24 , state_avg: 21},
+      { year: '2014-02', class_avg: 21 , state_avg: 18},
+      { year: '2014-03', class_avg: 18, state_avg: 17},
+      { year: '2014-04', class_avg: 22 , state_avg: 23},
+      { year: '2014-05', class_avg: 23 , state_avg: 20}
     ],
 
     // The name of the data record attribute that contains x-values.
@@ -34,27 +34,27 @@ angular.module('mean.analytics', [])
     // Chart data records -- each entry in this array corresponds to a point on
     // the chart.
    data: [
-      {name: 'Xiuli', score: 70},
+      {name: 'Xiuli', score: 77},
       {name: 'Julian', score: 90},
-      {name: 'Jaoquin', score: 80},
-      {name: 'Pierre', score: 70},
-      {name: 'Anita', score: 80},
-      {name: 'Meow', score: 70},
-      {name: 'Hi', score: 90},
-      {name: 'There', score: 80},
-      {name: 'Name', score: 70},
-      {name: 'Random', score: 80},
-      {name: 'Thoughts', score: 70},
-      {name: 'Totes', score: 90},
-      {name: 'Mcgotes', score: 80},
-      {name: 'Cool', score: 70},
-      {name: 'Beans', score: 80},
-      {name: 'Dude', score: 70},
-      {name: 'Cali', score: 90},
-      {name: 'Chicago', score: 80},
-      {name: 'Moew', score: 70},
-      {name: 'To', score: 80},
-      {name: 'LAAL', score:40}
+      {name: 'Jaoquin', score: 83},
+      {name: 'Pierre', score: 74},
+      {name: 'Anita', score: 82},
+      {name: 'Randal', score: 75},
+      {name: 'Homer', score: 93},
+      {name: 'Theodore', score: 88},
+      {name: 'Nancy', score: 72},
+      {name: 'Ralph', score: 84},
+      {name: 'Thomas', score: 79},
+      {name: 'Tawney', score: 96},
+      {name: 'Michelle', score: 85},
+      {name: 'Cooper', score: 70},
+      {name: 'Billy', score: 86},
+      {name: 'Doug', score: 76},
+      {name: 'Calvin', score: 90},
+      {name: 'Bev', score: 80},
+      {name: 'Morgan', score: 71},
+      {name: 'Alfredo', score: 84},
+      {name: 'Logan', score: 56}
     ],
 
     // The name of the data record attribute that contains x-values.
