@@ -1,6 +1,6 @@
 <style type="text/css">
 body, .splash-page {
-  /*background-color: #d9edf7;*/
+  background-color: #eeeeee;
 }
 .splash-masthead {
   background-color: #d9edf7;
@@ -17,31 +17,35 @@ body, .splash-page {
   text-align: center;
 }
 .splash-page {
-  margin-top: 60px;
+  /*margin-top: 60px;*/
 }
 </style>
 
-<div class="splash-masthead brand-info">
+<section class="splash-page jumbotron" data-ng-controller="IndexController">
   <h1 mean-token="'home-default'">Class Stats</h1>
-</div>
-
-<section class="splash-page" data-ng-controller="IndexController">
-    <h2>Designed to help you pinpoint which students need help, before they fail an exam.</h2>
-    <p>Track your students' progress, see how they compare against state averages, visualize accuracy and response time.</p>
-
-    <div class="row">
-      <div class="col-sm-4">
-        <img class="splash-img thumbnail" src="public/system/assets/img/splash/bar_chart.jpg" alt="Awesome Bar Charts" />
-        <p>See your students performance</p>
-      </div>
-      <div class="col-sm-4">
-        <img class="splash-img thumbnail" src="public/system/assets/img/splash/donut_chart.jpg" alt="Awesome Donut Charts" />
-        <p>Students track their own progress</p>
-      </div>
-      <div class="col-sm-4">
-        <img class="splash-img thumbnail" src="public/system/assets/img/splash/line_chart.jpg" alt="Awesome Line Charts" />
-        <p>Track your students against state averages</p>
-      </div>
+  <div class="row">
+    <div class="col-md-8 col-md-pull-2 col-md-push-2">
+      <h2>Designed to help you pinpoint which students need help, before they fail an exam.</h2>
+      <p>Track your students' progress, see how they compare against state averages, visualize accuracy and response time.</p>
     </div>
+  </div>
+  <p>&nbsp;</p>
+
+  <div class="row">
+    <div class="col-sm-4">
+      <img class="splash-img thumbnail" src="public/system/assets/img/splash/bar_chart.jpg" alt="Awesome Bar Charts" />
+      <p>See your students performance</p>
+    </div>
+    <div class="col-sm-4">
+      <img class="splash-img thumbnail" src="public/system/assets/img/splash/donut_chart.jpg" alt="Awesome Donut Charts" />
+      <p>Students track their own progress</p>
+    </div>
+    <div class="col-sm-4">
+      <img class="splash-img thumbnail" src="public/system/assets/img/splash/line_chart.jpg" alt="Awesome Line Charts" />
+      <p>Track your students against state averages</p>
+    </div>
+  </div>
+  
+  <p>&nbsp;</p>
 
 </section>
