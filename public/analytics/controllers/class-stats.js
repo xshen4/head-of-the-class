@@ -22,6 +22,53 @@
     {name: 'Music', score:50}
     ];
 })
+.controller('ClassController', function($scope){
+    new Morris.Line({
+    // ID of the element in which to draw the chart.
+    element: 'class-chart',
+    // Chart data records -- each entry in this array corresponds to a point on
+    // the chart.
+   data: [
+      { year: '2014-01', class_avg: 20 , state_avg: 30},
+      { year: '2014-02', class_avg: 10 , state_avg: 20},
+      { year: '2014-03', class_avg: 5 , state_avg: 10},
+      { year: '2014-04', class_avg: 5 , state_avg: 15},
+      { year: '2014-05', class_avg: 20 , state_avg: 5}
+    ],
+
+    // The name of the data record attribute that contains x-values.
+    xkey: 'year',
+    // A list of names of data record attributes that contain y-values.
+    ykeys: ['class_avg', 'state_avg'],
+    // Labels for the ykeys -- will be displayed when you hover over the
+    // chart.
+    labels: ['Class Average', 'State Average']
+  });
+})
+.controller('IndvController', function($scope){
+    new Morris.Bar({
+    // ID of the element in which to draw the chart.
+    element: 'indv-chart',
+    // Chart data records -- each entry in this array corresponds to a point on
+    // the chart.
+   data: [
+      {name: 'Xiuli', score: 70, avg: 50},
+      {name: 'Julian', score: 90, avg: 70},
+      {name: 'Jaoquin', score: 80, avg:70},
+      {name: 'Pierre', score: 70, avg:75},
+      {name: 'Anita', score: 80, avg:60},
+      {name: 'Losaaa', score:40, avg: 50}
+    ],
+
+    // The name of the data record attribute that contains x-values.
+    xkey: 'name',
+    // A list of names of data record attributes that contain y-values.
+    ykeys: ['score', 'avg'],
+    // Labels for the ykeys -- will be displayed when you hover over the
+    // chart.
+    labels: ['Class Average', 'State Average']
+  });
+})
 /**** DIRECTIVES *****/
 // Class stat directive.  Shows individual users. 
   .directive('classStats', ['$window', '$timeout', 'd3Service', 
