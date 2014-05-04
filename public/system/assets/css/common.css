@@ -1,8 +1,15 @@
 .page-header {
-  padding-bottom: 0;
+  padding-bottom: 0px;
   margin: 0;
-  border-bottom: 0;
+  border-bottom: 0px;
 }
+
+.row .page-header {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
 .page-header .navbar-nav{ float: right;}
 .page-header>div>div, .page-header>div>ul {
   display:inline-block;
