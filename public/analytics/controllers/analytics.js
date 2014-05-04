@@ -1,6 +1,6 @@
 'use strict';
   
-  angular.module('mean.analytics', ['d3'])
+angular.module('mean.analytics', ['d3'])
   /**** CONTROLLERS ****/
   .controller('ClassStatController', function($scope) {
     // get data from db here 
