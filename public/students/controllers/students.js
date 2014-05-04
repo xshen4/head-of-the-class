@@ -37,7 +37,7 @@ angular.module('mean.students', [])
     new Morris.Donut({
     element: 'english-progress',
       data: [
-        {label: 'Your score', value: 75},
+        {label: 'Your score', value: 95},
         {label: 'Average Score', value: 81}
       ]
     });
